@@ -14,7 +14,7 @@ vendor.audio.offload.gapless.enabled=true \
 vendor.audio_hal.period_size=192 \
 vendor.voice.path.for.pcm.voip=true \
 ro.config.media_vol_steps=25 \
-ro.config.vc_call_vol_steps=7 
+ro.config.vc_call_vol_steps=7
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -43,7 +43,9 @@ persist.camera.hal.debug.mask=0
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 drm.service.enabled=1 \
-vidc.enc.narrow.searchrange=1
+vidc.enc.narrow.searchrange=1 \
+mm.enable.sec.smoothstreaming=true
+
 
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -63,8 +65,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.com.google.clientidbase.am=android-micromax \
 ro.com.google.clientidbase.gmm=android-micromax \
 ro.com.google.clientidbase.ms=android-micromax \
-ro.com.google.clientidbase.yt=android-micromax 
-
+ro.com.google.clientidbase.yt=android-micromax
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.data.target=dpm1 \
