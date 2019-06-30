@@ -42,6 +42,7 @@ vidc.enc.narrow.searchrange=1
 
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
+ro.vendor.qti.am.reschedule_service=true
 
 # Perf
 ro.config.max_starting_bg=8
@@ -66,7 +67,6 @@ ro.telephony.call_ring.multiple=false
 
 # Sensors
 ro.fusion.magfield.max=250
-
 
 # Wi-Fi
 wifi.interface=wlan0
