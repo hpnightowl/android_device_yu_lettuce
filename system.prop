@@ -51,6 +51,12 @@ ro.core_ctl_min_cpu=0
 ro.core_ctl_max_cpu=4
 ro.min_freq_0=200000
 
+# Play store
+ro.com.google.clientidbase.am=android-micromax
+ro.com.google.clientidbase.gmm=android-micromax
+ro.com.google.clientidbase.ms=android-micromax
+ro.com.google.clientidbase.yt=android-micromax
+
 # Radio
 persist.data.target=dpm1
 persist.radio.multisim.config=dsds
