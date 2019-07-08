@@ -25,6 +25,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lettuce device
 $(call inherit-product, device/yu/lettuce/device.mk)
 
+# Inherit System Properties
+$(call inherit-product, device/yu/lettuce/system_prop.mk)
+
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 

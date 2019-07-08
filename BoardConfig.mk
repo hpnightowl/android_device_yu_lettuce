@@ -144,9 +144,6 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc.0/78b9000.i2c/i2c-5/5-0040/double_t
 TARGET_HAS_LEGACY_POWER_STATS := true
 TARGET_HAS_NO_POWER_STATS := true
 
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)
 
