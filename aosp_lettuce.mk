@@ -14,11 +14,10 @@
 # limitations under the License.
 
 # Inherit some common ROM's stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
@@ -28,10 +27,18 @@ $(call inherit-product, device/yu/lettuce/device.mk)
 # Inherit System Properties
 $(call inherit-product, device/yu/lettuce/system_prop.mk)
 
+# Some Evo Stuff
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_USE_OLD_SOUND_PICKER := true
+TARGET_GAPPS_ARCH := arm64
+CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_BOOT_ANIMATION_RES_EVO := true
+TARGET_MINIMAL_GAPPS :=true
+
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
-PRODUCT_NAME := lineage_lettuce
+PRODUCT_NAME := aosp_lettuce
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := lettuce
 PRODUCT_BRAND := YU

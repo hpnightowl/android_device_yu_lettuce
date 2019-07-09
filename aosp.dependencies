@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "evo-devices",
+    "repository": "vendor_yu",
+    "target_path": "vendor/yu",
+    "branch": "pie"
+  },
+  {
+    "remote": "evo-devices",
+    "repository": "kernel_cyanogen_msm8916",
+    "target_path": "kernel/cyanogen/msm8916",
+    "branch": "pie"
+  }
+]
